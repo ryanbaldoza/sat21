@@ -9,8 +9,10 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        
 
         <!-- Styles -->
+        <link rel="stylesheet" type="text/css" href="{{ asset('common/header.css') }}">
         <style>
             html, body {
                 background-color: #fff;

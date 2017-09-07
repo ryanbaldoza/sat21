@@ -2,7 +2,7 @@
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| Web Routes - Frontend
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend/index');
 });
+
+Route::get('/{pageSlug}', 'PageController@index');
