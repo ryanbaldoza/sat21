@@ -1,0 +1,85 @@
+
+.carousel {
+  width: 100%;
+  background-color: #000;
+  height: 100%;
+  position: relative;
+
+    .carousel-fade .carousel-inner {
+      height: 100%;
+
+      .item {
+        -webkit-transition-property: opacity;
+        transition-property: opacity;
+        height: 100%;
+        opacity: 0;
+      }
+
+      .active,
+      .next.left,
+      .prev.right {
+        opacity: 1;
+      }
+
+      .next,
+      .prev,
+      .active.left,
+      .active.right {
+        left: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    .carousel-fade .carousel-control {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .carousel-fade .carousel-control .glyphicon {
+      display: none;
+    }
+
+    .stopfade {
+      opacity: 0.5;
+    }
+
+    .active > img{
+      transform:scale(1.1);
+      -webkit-transform: scale(1.1);
+      -webkit-transition: -webkit-transform 5s ease-out;
+      -moz-transition: -moz-transform 5s ease-out;
+      transition: transform 5s ease-out;
+    }
+
+    .slide-content  {
+      position: absolute;
+      top: 50%;
+      left:50%;
+      transform:translate(-50%,-55%);
+      text-align: center;
+      width: 100%;
+      
+      .banner-logo {
+        margin-bottom: 60px;
+      }
+
+      button.search__btn {
+        outline: none;
+        border: none;
+        width: 170px;
+      }
+
+      input[type=text] {
+        @include white-textbox;
+        width: 300px;
+      }
+
+      input{
+        margin-right: 20px;
+      }
+    }
+
+
+
+}

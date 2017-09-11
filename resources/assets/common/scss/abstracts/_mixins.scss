@@ -1,0 +1,10 @@
+@mixin rounded {
+	border-radius: 3px;
+}
+
+@mixin white-textbox {
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	padding: 20px 10px;
+}

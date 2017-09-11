@@ -1,0 +1,251 @@
+.__transition {
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+.full__center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a,
+input,
+select,
+textarea {
+  outline: none;
+}
+
+.mainfont__regular {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.mainfont__medium {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.mainfont__semibold {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.mainfont__bold {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+header {
+  padding: 15px 0;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+header .__logo,
+header a.website__btn {
+  display: inline-block;
+}
+
+header .__logo {
+  margin-right: 35px;
+}
+
+header a.website__btn {
+  width: 170px;
+}
+
+header .user__action {
+  margin-top: 15px;
+}
+
+header .user__action a {
+  font-family: "Raleway", sans-serif;
+}
+
+header .user__action #sign__up,
+header .user__action #sign__in {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  padding: 7px;
+  color: #202020;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+header .user__action #sign__up img,
+header .user__action #sign__in img {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+header .user__action #sign__up .website__btn,
+header .user__action #sign__in .website__btn {
+  margin-left: 15px;
+}
+
+.primary__btn {
+  background-color: #ef4a23;
+}
+
+.primary__btn:hover {
+  background-color: #3b5a9a;
+}
+
+.secondary__btn {
+  background-color: #3b5a9a;
+}
+
+.secondary__btn:hover {
+  background-color: #ef4a23;
+}
+
+.website__btn {
+  border-radius: 3px;
+  font-size: 13px;
+  padding: 11px 10px;
+  text-align: center;
+  color: #fff;
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.website__btn:hover {
+  color: #fff;
+}
+
+.search__btn {
+  border-radius: 3px;
+  font-size: 13px;
+  padding: 11px 10px;
+  text-align: center;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.search__btn:hover {
+  color: #fff;
+}
+
+.carousel {
+  width: 100%;
+  background-color: #000;
+  height: 100%;
+  position: relative;
+}
+
+.carousel .carousel-fade .carousel-inner {
+  height: 100%;
+}
+
+.carousel .carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  height: 100%;
+  opacity: 0;
+}
+
+.carousel .carousel-fade .carousel-inner .active,
+.carousel .carousel-fade .carousel-inner .next.left,
+.carousel .carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel .carousel-fade .carousel-inner .next,
+.carousel .carousel-fade .carousel-inner .prev,
+.carousel .carousel-fade .carousel-inner .active.left,
+.carousel .carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel .carousel-fade .carousel-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel .carousel-fade .carousel-control .glyphicon {
+  display: none;
+}
+
+.carousel .stopfade {
+  opacity: 0.5;
+}
+
+.carousel .active > img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -webkit-transition: -webkit-transform 5s ease-out;
+  transition: -webkit-transform 5s ease-out;
+  transition: transform 5s ease-out;
+  transition: transform 5s ease-out, -webkit-transform 5s ease-out;
+}
+
+.carousel .slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -55%);
+          transform: translate(-50%, -55%);
+  text-align: center;
+  width: 100%;
+}
+
+.carousel .slide-content .banner-logo {
+  margin-bottom: 60px;
+}
+
+.carousel .slide-content button.search__btn {
+  outline: none;
+  border: none;
+  width: 170px;
+}
+
+.carousel .slide-content input[type=text] {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 20px 10px;
+  width: 300px;
+}
+
+.carousel .slide-content input {
+  margin-right: 20px;
+}
+

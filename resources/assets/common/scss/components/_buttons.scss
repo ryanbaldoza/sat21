@@ -1,0 +1,45 @@
+.primary__btn {
+	background-color: $primary_color;
+
+	&:hover {
+		background-color: $secondary_color
+	}
+}
+
+.secondary__btn {
+	background-color: $secondary_color;
+
+	&:hover {
+		background-color: $primary_color;		
+	}
+}
+
+.website__btn {
+	@include rounded;
+	font-size: 13px;
+	padding: 11px 10px;
+	text-align: center;
+	color: #fff;
+	display: block;
+	font-family: $main-font;
+	font-weight: 600;
+
+	&:hover {
+		color: #fff;
+	}
+
+}
+
+.search__btn {
+	@include rounded;
+	font-size: 13px;
+	padding: 11px 10px;
+	text-align: center;
+	color: #fff;
+	font-family: $main-font;
+	font-weight: 600;
+
+	&:hover {
+		color: #fff;
+	}
+}

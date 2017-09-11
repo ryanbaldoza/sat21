@@ -1,5 +1,6 @@
 {
     "/common/js/vendors.js": "/common/js/vendors.js",
-    "/common/css/header.css": "/common/css/header.css",
+    "/common/css/main.css": "/common/css/main.css",
+    "/common/js/main.js": "/common/js/main.js",
     "/common/css/vendors.css": "/common/css/vendors.css"
 }
