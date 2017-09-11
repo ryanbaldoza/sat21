@@ -1,0 +1,143 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a,
+input,
+select,
+textarea {
+  outline: none;
+}
+
+.__transition {
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+.full__center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.primary__btn {
+  background-color: #ef4a23;
+}
+
+.primary__btn:hover {
+  background-color: #3b5a9a;
+}
+
+.secondary__btn {
+  background-color: #3b5a9a;
+}
+
+.secondary__btn:hover {
+  background-color: #ef4a23;
+}
+
+.website__btn {
+  font-size: 13px;
+  padding: 11px 10px;
+  text-align: center;
+  color: #fff;
+  display: block;
+  border-radius: 3px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.website__btn:hover {
+  color: #fff;
+}
+
+.raleway__regular {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.raleway__medium {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.raleway__semibold {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.raleway__bold {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+header {
+  padding: 15px 0;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+header .__logo,
+header a.website__btn {
+  display: inline-block;
+}
+
+header .__logo {
+  margin-right: 35px;
+}
+
+header a.website__btn {
+  width: 170px;
+}
+
+header .user__action {
+  margin-top: 15px;
+}
+
+header .user__action a {
+  font-family: 'Raleway' ,sans-serif;
+}
+
+header .user__action #sign__up,
+header .user__action #sign__in {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  padding: 7px;
+  color: #202020;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+header .user__action #sign__up img,
+header .user__action #sign__in img {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+header .user__action #sign__up .website__btn,
+header .user__action #sign__in .website__btn {
+  margin-left: 15px;
+}
+

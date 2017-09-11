@@ -8,6 +8,6 @@ class PageController extends BaseController
 {
     public function index( $pageSlug )
     {
-    	return $pageSlug;
+    	return view( 'frontend/pages/homepage' );
     }
 }

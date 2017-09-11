@@ -12,7 +12,5 @@
 */
 
 Route::get('/', function () {
-    return view('frontend/index');
+    return view('frontend/pages/homepage');
 });
-
-Route::get('/{pageSlug}', 'PageController@index');
