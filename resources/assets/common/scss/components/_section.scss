@@ -1,0 +1,25 @@
+.section {
+	padding: 60px 0 80px;
+}
+
+.section-title {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.section-title h2 {
+	text-transform: uppercase;
+	color: $primary-text-color;
+	font-size: 28px;
+	font-weight: 700;
+    font-family: $main-font;
+
+}	
+
+.section-footer {
+	margin-top: 70px;
+}
+
+.section-footer a {
+	margin: 0 auto;
+}

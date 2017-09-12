@@ -1,85 +1,145 @@
+#services-for-you,
+#popular-services,
+#how-it-works {
+  background-color: $section-bg-color;
+}
 
-.carousel {
-  width: 100%;
-  background-color: #000;
-  height: 100%;
+
+.featured-services-carousel {
+  margin: 0 auto;
+  padding: 0 5%;
+  width: 80%;
   position: relative;
+}
 
-    .carousel-fade .carousel-inner {
-      height: 100%;
+.featured-services-carousel .item {
+	position: relative;
+}
 
-      .item {
-        -webkit-transition-property: opacity;
-        transition-property: opacity;
-        height: 100%;
-        opacity: 0;
-      }
+.featured-services-carousel .item .gradient-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  content: '';
+  background-color: rgba(0,0,0,.2);
+}
 
-      .active,
-      .next.left,
-      .prev.right {
-        opacity: 1;
-      }
+.item h4 {
+	@include overlay-title;
+}
 
-      .next,
-      .prev,
-      .active.left,
-      .active.right {
-        left: 0;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-      }
-    }
+.item .overlay {
+	@include overlay;
+}
 
-    .carousel-fade .carousel-control {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .carousel-fade .carousel-control .glyphicon {
-      display: none;
-    }
+.item:hover .overlay {
+  opacity: 1;
+}
 
-    .stopfade {
-      opacity: 0.5;
-    }
+.item:hover {
+  background-color: rgba(0,0,0,0);
+}
 
-    .active > img{
-      transform:scale(1.1);
-      -webkit-transform: scale(1.1);
-      -webkit-transition: -webkit-transform 5s ease-out;
-      -moz-transition: -moz-transform 5s ease-out;
-      transition: transform 5s ease-out;
-    }
+#top-rated-provider a {
+	width: 200px;
+}
 
-    .slide-content  {
-      position: absolute;
-      top: 50%;
-      left:50%;
-      transform:translate(-50%,-55%);
-      text-align: center;
-      width: 100%;
-      
-      .banner-logo {
-        margin-bottom: 60px;
-      }
 
-      button.search__btn {
-        outline: none;
-        border: none;
-        width: 170px;
-      }
+// HOW IT WORKS
 
-      input[type=text] {
-        @include white-textbox;
-        width: 300px;
-      }
+.how-it-works-wrap {
+	width: 90%;
+	margin-left: 5%;
+}
 
-      input{
-        margin-right: 20px;
-      }
-    }
+.how-it-works-col {
+	width: 80%;
+	margin-left: 10%;
+	text-align: center;
+	position: relative;
+
+	h3 {
+		margin: 50px 0 30px;
+		font-family: $main-font;
+		color: $primary-text-color;
+		font-weight: 700;
+	}
+
+	p {
+		font-family: $main-font;
+		font-size: 16px;
+	}
+}
+
+.how-it-works-col::after {
+	content: url('/../../frontend/imgs/gray-dots.png');
+	position: absolute;
+    left: 100%;
+    top: 30%;
+}
+
+.how-it-works-col:last-of-type::after {
+	content: url('');
+}
 
 
 
+// GET CONNECTED
+
+#get-connected {
+	background-image: url('/../../frontend/imgs/bg-get-connected.jpg');
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	height: 500px;
+}
+.get-connected-content {margin-top: 75px;}
+.get-connected-content h2,
+.get-connected-content p {
+	color: rgb(255,255,255);
+	font-family: $main-font;
+}
+
+.get-connected-content h2 {
+	font-size: 40px;
+	margin-bottom: 30px;
+	font-weight: 500;
+}
+
+.get-connected-content p {
+	font-size: 18px;
+	line-height: 2em;
+}
+
+#get-connected .mobile-apps {
+	margin-top: 40px;
+}
+
+
+// PROJECT COUNTER
+#project-counter {
+	background-color: rgb(0,173,239);
+	padding: 55px 0;	
+}
+
+.counter-content {
+	text-align: center;
+}
+
+.counter-content h2,
+.counter-content p {
+	font-family: $main-font;
+	color: rgb(255,255,255);
+}
+
+.counter-content h2 {
+	font-size: 65px;
+	font-weight: 500;
+}
+
+.counter-content p {
+	font-size: 18px;	
+	text-transform: uppercase;	
 }

@@ -1,3 +1,4 @@
+@import "node_modules/font-awesome/scss/font-awesome.scss";
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 @import 'abstracts/helpers';
@@ -8,5 +9,7 @@
 @import 'layout/header';
 
 @import 'components/buttons';
+@import 'components/carousel';
+@import 'components/section';
 
 @import 'pages/home';
