@@ -60,39 +60,42 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 18);
+/******/ 	return __webpack_require__(__webpack_require__.s = 19);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 18:
+/***/ 19:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(19);
+module.exports = __webpack_require__(20);
 
 
 /***/ }),
 
-/***/ 19:
+/***/ 20:
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-    $('#heroBanner').carousel({
-        interval: 4000
+    $('.hero-banner .owl-carousel').owlCarousel({
+        autoplay: true,
+        loop: true,
+        margin: 10,
+        nav: true,
+        animateIn: 'fadeIn', // add this
+        animateOut: 'fadeOut', // and this
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
     });
-    $.fn.carousel.Constructor.prototype.next = function () {
-        if (this.fadein) return;
-        if (this.interval) clearInterval(this.interval);
-        return this.slide('next');
-    };
-
-    $.fn.carousel.Constructor.prototype.prev = function () {
-        if (this.fadein) return;
-        if (this.interval) clearInterval(this.interval);
-        return this.slide('prev');
-    };
-
-    $('#heroBanner').carousel({ interval: 2000 });
 
     var carousel = function carousel(options) {
 
@@ -259,7 +262,94 @@ $(document).ready(function () {
             }
         }
     });
+
+    $('.counter-num').counterUp({
+        delay: 10,
+        time: 2000
+    });
 });
+
+/*!
+* jquery.counterup.js 1.0
+*
+* Copyright 2013, Benjamin Intal http://gambit.ph @bfintal
+* Released under the GPL v2 License
+*
+* Date: Nov 26, 2013
+*/
+(function ($) {
+    "use strict";
+
+    $.fn.counterUp = function (options) {
+
+        // Defaults
+        var settings = $.extend({
+            'time': 400,
+            'delay': 10
+        }, options);
+
+        return this.each(function () {
+
+            // Store the object
+            var $this = $(this);
+            var $settings = settings;
+
+            var counterUpper = function counterUpper() {
+                var nums = [];
+                var divisions = $settings.time / $settings.delay;
+                var num = $this.text();
+                var isComma = /[0-9]+,[0-9]+/.test(num);
+                num = num.replace(/,/g, '');
+                var isInt = /^[0-9]+$/.test(num);
+                var isFloat = /^[0-9]+\.[0-9]+$/.test(num);
+                var decimalPlaces = isFloat ? (num.split('.')[1] || []).length : 0;
+
+                // Generate list of incremental numbers to display
+                for (var i = divisions; i >= 1; i--) {
+
+                    // Preserve as int if input was int
+                    var newNum = parseInt(num / divisions * i);
+
+                    // Preserve float if input was float
+                    if (isFloat) {
+                        newNum = parseFloat(num / divisions * i).toFixed(decimalPlaces);
+                    }
+
+                    // Preserve commas if input had commas
+                    if (isComma) {
+                        while (/(\d+)(\d{3})/.test(newNum.toString())) {
+                            newNum = newNum.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
+                        }
+                    }
+
+                    nums.unshift(newNum);
+                }
+
+                $this.data('counterup-nums', nums);
+                $this.text('0');
+
+                // Updates the number until we're done
+                var f = function f() {
+                    $this.text($this.data('counterup-nums').shift());
+                    if ($this.data('counterup-nums').length) {
+                        setTimeout($this.data('counterup-func'), $settings.delay);
+                    } else {
+                        delete $this.data('counterup-nums');
+                        $this.data('counterup-nums', null);
+                        $this.data('counterup-func', null);
+                    }
+                };
+                $this.data('counterup-func', f);
+
+                // Start the count up
+                setTimeout($this.data('counterup-func'), $settings.delay);
+            };
+
+            // Perform counts when the element gets into view
+            $this.waypoint(counterUpper, { offset: '100%', triggerOnce: true });
+        });
+    };
+})(jQuery);
 
 /***/ })
 

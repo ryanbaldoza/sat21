@@ -3165,6 +3165,39 @@ header .user__action #sign__in .website__btn {
   margin-left: 15px;
 }
 
+.footer {
+  background-color: #3b5a9a;
+  border-top: 6px solid #ef4a23;
+  padding: 50px 0;
+}
+
+.footer p,
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+
+.footer .col-title {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.footer .footer-nav,
+.footer .social-media-nav {
+  list-style: none;
+}
+
+.footer .footer-nav li {
+  padding: 5px 0;
+}
+
+.footer .social-media-nav li {
+  display: inline;
+  margin-right: 30px;
+}
+
 .primary__btn {
   background-color: #ef4a23;
 }
@@ -3210,89 +3243,42 @@ header .user__action #sign__in .website__btn {
   color: #fff;
 }
 
-.carousel {
-  width: 100%;
-  background-color: #000;
-  height: 100%;
+.hero-banner .owl-carousel .item {
+  height: auto;
+  color: #fff;
   position: relative;
 }
 
-.carousel .carousel-fade .carousel-inner {
-  height: 100%;
-}
-
-.carousel .carousel-fade .carousel-inner .item {
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-  height: 100%;
-  opacity: 0;
-}
-
-.carousel .carousel-fade .carousel-inner .active,
-.carousel .carousel-fade .carousel-inner .next.left,
-.carousel .carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-
-.carousel .carousel-fade .carousel-inner .next,
-.carousel .carousel-fade .carousel-inner .prev,
-.carousel .carousel-fade .carousel-inner .active.left,
-.carousel .carousel-fade .carousel-inner .active.right {
-  left: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.carousel .carousel-fade .carousel-control {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.carousel .carousel-fade .carousel-control .glyphicon {
+.hero-banner .owl-nav,
+.hero-banner .owl-dots {
   display: none;
 }
 
-.carousel .stopfade {
-  opacity: 0.5;
+.hero-banner {
+  position: relative;
+  overflow: hidden;
 }
 
-.carousel .active > img {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -webkit-transition: -webkit-transform 5s ease-out;
-  transition: -webkit-transform 5s ease-out;
-  transition: transform 5s ease-out;
-  transition: transform 5s ease-out, -webkit-transform 5s ease-out;
-}
-
-.carousel .slide-content {
+.hero-banner .slide-content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -55%);
-  transform: translate(-50%, -55%);
-  text-align: center;
-  width: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(32%, 20%);
+          transform: translate(32%, 20%);
+  z-index: 99;
 }
 
-.carousel .slide-content .banner-logo {
+.hero-banner .slide-content .banner-logo {
   margin-bottom: 60px;
 }
 
-.carousel .slide-content button.search__btn {
+.hero-banner .slide-content button.search__btn {
   outline: none;
   border: none;
   width: 170px;
 }
 
-.carousel .slide-content input[type=text] {
+.hero-banner .slide-content input[type=text] {
   border: none;
   outline: none;
   border-radius: 3px;
@@ -3300,7 +3286,7 @@ header .user__action #sign__in .website__btn {
   width: 300px;
 }
 
-.carousel .slide-content input {
+.hero-banner .slide-content input {
   margin-right: 20px;
 }
 
@@ -3462,14 +3448,15 @@ header .user__action #sign__in .website__btn {
   position: relative;
 }
 
-.featured-services-carousel .item .gradient-overlay {
+.gradient-overlay {
   position: absolute;
   height: 100%;
   width: 100%;
   top: 0px;
   left: 0px;
   content: '';
-  background-color: rgba(0, 0, 0, 0.2);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000));
+  background-image: linear-gradient(transparent, #000);
 }
 
 .item h4 {
@@ -3577,6 +3564,66 @@ header .user__action #sign__in .website__btn {
 
 #get-connected .mobile-apps {
   margin-top: 40px;
+}
+
+.video-wrapper {
+  position: relative;
+}
+
+.video-wrapper > img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.video-overlay-play-button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 10px calc(50% - 50px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  opacity: 0.95;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000));
+  background-image: linear-gradient(transparent, #000);
+  -webkit-transition: opacity 150ms;
+  transition: opacity 150ms;
+}
+
+.video-overlay-play-button:hover {
+  opacity: 1;
+}
+
+.video-overlay-play-button.is-hidden {
+  display: none;
+}
+
+.video-description {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 30px;
+}
+
+.video-description h2,
+.video-description p {
+  color: #2b2b2b;
+  font-family: "Raleway", sans-serif;
+}
+
+.video-description h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.video-description p {
+  font-size: 16px;
+}
+
+#videos a.website__btn {
+  width: 200px;
 }
 
 #project-counter {

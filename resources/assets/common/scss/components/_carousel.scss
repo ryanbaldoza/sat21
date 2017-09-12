@@ -1,71 +1,24 @@
-.carousel {
-  width: 100%;
-  background-color: #000;
-  height: 100%;
+
+ .hero-banner .owl-carousel .item {
+  height: auto;
+  color: #fff;
+  position: relative; 
+}
+ .hero-banner .owl-nav,
+ .hero-banner .owl-dots{
+  display: none;
+}
+
+.hero-banner {
   position: relative;
-
-    .carousel-fade .carousel-inner {
-      height: 100%;
-
-      .item {
-        -webkit-transition-property: opacity;
-        transition-property: opacity;
-        height: 100%;
-        opacity: 0;
-      }
-
-      .active,
-      .next.left,
-      .prev.right {
-        opacity: 1;
-      }
-
-      .next,
-      .prev,
-      .active.left,
-      .active.right {
-        left: 0;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-      }
-    }
-
-    .carousel-fade .carousel-control {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-    }
-    .carousel-fade .carousel-control .glyphicon {
-      display: none;
-    }
-
-    .stopfade {
-      opacity: 0.5;
-    }
-
-    .active > img{
-      transform:scale(1.1);
-      -webkit-transform: scale(1.1);
-      -webkit-transition: -webkit-transform 5s ease-out;
-      transition: -webkit-transform 5s ease-out;
-      transition: transform 5s ease-out;
-      transition: transform 5s ease-out, -webkit-transform 5s ease-out;
-    }
+  overflow: hidden;
 
     .slide-content  {
       position: absolute;
-      top: 50%;
-      left:50%;
-      -webkit-transform:translate(-50%,-55%);
-              transform:translate(-50%,-55%);
-      text-align: center;
-      width: 100%;
+      top: 0;
+      left: 0;
+      transform: translate(32%, 20%);
+      z-index: 99;
       
       .banner-logo {
         margin-bottom: 60px;

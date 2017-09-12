@@ -1,20 +1,23 @@
 $(document).ready(function() {
-	$('#heroBanner').carousel({
-		interval: 4000
-	});
-	$.fn.carousel.Constructor.prototype.next = function () {
-	    if (this.fadein) return
-	    if (this.interval) clearInterval(this.interval);
-	    return this.slide('next')
-	  }
-
-	$.fn.carousel.Constructor.prototype.prev = function () {
-	    if (this.fadein) return
-	    if (this.interval) clearInterval(this.interval);
-	    return this.slide('prev')
-	  }
-
-	$('#heroBanner').carousel({interval:2000});  
+$('.hero-banner .owl-carousel').owlCarousel({
+  autoplay: true,
+    loop:true,
+    margin:10,
+    nav:true,
+    animateIn: 'fadeIn', // add this
+  animateOut: 'fadeOut', // and this
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
 
 
 var carousel = function carousel(options) {
@@ -190,4 +193,11 @@ $('.four-items .owl-carousel').owlCarousel({
   }
 })
 
+    $('.counter-num').counterUp({
+        delay: 10,
+        time: 2000
+    });
+
+
 });
+

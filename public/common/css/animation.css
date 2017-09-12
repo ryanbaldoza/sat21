@@ -1,0 +1,18 @@
+@keyframes zoom {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.25, 1.25);
+  }
+}
+
+.hero-banner .owl-item {overflow:hidden}
+.hero-banner .owl-item img {
+  animation-name: zoom;
+  animation-duration: 20s;
+  transform-origin:70% 70%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition: all 0.8s ease-out;
+}
