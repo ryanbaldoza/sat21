@@ -1,5 +1,12 @@
 {
     "/common/js/vendors.js": "/common/js/vendors.js",
+    "/common/css/main.css": "/common/css/main.css",
     "/common/js/main.js": "/common/js/main.js",
-    "/common/css/vendors.css": "/common/css/vendors.css"
+    "/common/css/vendors.css": "/common/css/vendors.css",
+    "/fonts/fontawesome-webfont.eot": "/fonts/fontawesome-webfont.eot",
+    "/fonts/fontawesome-webfont.svg": "/fonts/fontawesome-webfont.svg",
+    "/fonts/fontawesome-webfont.ttf": "/fonts/fontawesome-webfont.ttf",
+    "/fonts/fontawesome-webfont.woff": "/fonts/fontawesome-webfont.woff",
+    "/fonts/fontawesome-webfont.woff2": "/fonts/fontawesome-webfont.woff2",
+    "/fonts/FontAwesome.otf": "/fonts/FontAwesome.otf"
 }

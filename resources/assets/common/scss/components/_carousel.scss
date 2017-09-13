@@ -17,11 +17,13 @@
       position: absolute;
       top: 0;
       left: 0;
-      transform: translate(32%, 20%);
+      -webkit-transform: translate(32%, 20%);
+              transform: translate(32%, 20%);
       z-index: 99;
       
       .banner-logo {
         margin-bottom: 60px;
+        text-align: center;
       }
 
       button.search__btn {
@@ -33,10 +35,38 @@
       input[type=text] {
         @include white-textbox;
         width: 300px;
+        font-family: $main-font;
+        font-size: 16px;
       }
 
       input{
         margin-right: 20px;
+      }
+
+      input#location {
+         background-image: url('/../../frontend/imgs/icon-location.png');
+         background-repeat: no-repeat;
+         background-position: 10px 10px; 
+         text-indent: 20px;
+      }
+
+      input#location:focus{
+        background-image:none;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      input#services {
+         background-image: url('/../../frontend/imgs/icon-search.png');
+         background-repeat: no-repeat;
+         background-position: 10px 10px; 
+         text-indent: 20px;
+      }
+
+      input#services:focus{
+        background-image:none;
+        padding-left: 20px;
+        padding-right: 20px;
       }
     }
 
@@ -51,21 +81,40 @@
   overflow-x:hidden;
 }
 .revolving-carousel__arrow {
-  width: 30px;
-  height: 30px;
   position: absolute;
-  top: 50%;
+  top: 25%;
   z-index: 1;
-  -webkit-transform: translateY(-50%) rotate(45deg);
-          transform: translateY(-50%) rotate(45deg);
-  background-color: white;
+  cursor: pointer;
+  -webkit-transform:translate(0%, 50%);
+          transform:translate(0%, 50%);
 }
+
+.revolving-carousel__arrow  i {
+  color: #ddd;
+  font-size: 60px;
+}
+
 .revolving-carousel__arrow--left {
   left: 15px;
+  margin-left: -200px;
+  -webkit-transition: margin-left 0.8s ease-in-out;
+  transition: margin-left 0.8s ease-in-out;
 }
 .revolving-carousel__arrow--right {
-  right: 15px;
+  right: 0px;
+  margin-right: -200px;
+  -webkit-transition: margin-right 0.8s ease-in-out;
+  transition: margin-right 0.8s ease-in-out;
 }
+
+.revolving-carousel:hover .revolving-carousel__arrow--left {
+  margin-left: 0;
+}
+
+.revolving-carousel:hover .revolving-carousel__arrow--right {
+  margin-right: 0;
+}
+
 .revolving-carousel__slides {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,7 +136,10 @@
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transition: transform .35s ease-in-out;
-  transition: transform .35s ease-in-out;        
+  -webkit-transition: -webkit-transform .35s ease-in-out;
+  transition: -webkit-transform .35s ease-in-out;
+  transition: transform .35s ease-in-out;
+  transition: transform .35s ease-in-out, -webkit-transform .35s ease-in-out;        
 }
 
 .revolving-carousel__slides li h4 {
@@ -99,8 +151,8 @@
 }
 
 .revolving-carousel__slides li:hover img{
-  //-webkit-transform: scale(1.05);
-   //       transform: scale(1.05);
+  /*-webkit-transform: scale(1.05);*/
+   /*       transform: scale(1.05);*/
 }
 
 .revolving-carousel__slides li:hover .overlay {
@@ -108,7 +160,7 @@
 }
 
 
-// FEATURED SERVICES
+/* FEATURED SERVICES*/
 
 /* fix blank or flashing items on carousel */
 .owl-carousel .item {

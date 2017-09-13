@@ -15,9 +15,11 @@ var common = 'public/common';
 mix.styles([
 	'node_modules/bootstrap/dist/css/bootstrap.min.css',
 	'node_modules/owl.carousel/dist/assets/owl.carousel.min.css',
-	'node_modules/owl.carousel/dist/assets/owl.theme.default.min.css'
+	'node_modules/owl.carousel/dist/assets/owl.theme.default.min.css',
+	'node_modules/venobox/venobox/venobox.css'
 ], common + '/css/vendors.css')
 .js('resources/assets/common/js/vendors.js', common + '/js/vendors.js')
+.js('resources/assets/common/js/counter.js', common + '/js/vendors.js')
 .js('resources/assets/common/js/main.js', common + '/js/main.js')
 .sass('resources/assets/common/scss/main.scss', common + '/css')
 .copy('node_modules/font-awesome/fonts/*', 'public/fonts');

@@ -1,3 +1,4 @@
+$fa-font-path: "../fonts";
 @import "node_modules/font-awesome/scss/font-awesome.scss";
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
@@ -12,5 +13,6 @@
 @import 'components/buttons';
 @import 'components/carousel';
 @import 'components/section';
+@import 'components/ratings';
 
 @import 'pages/home';

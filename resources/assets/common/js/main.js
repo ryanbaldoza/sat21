@@ -29,7 +29,7 @@ var carousel = function carousel(options) {
         stopped: false,
 
         options: {
-            speed: 3000,
+            speed: 5000,
             acceleration: 5,
             reverse: false,
             selector: '.revolving-carousel',
@@ -198,6 +198,6 @@ $('.four-items .owl-carousel').owlCarousel({
         time: 2000
     });
 
-
+    $('.venobox').venobox();
 });
 
