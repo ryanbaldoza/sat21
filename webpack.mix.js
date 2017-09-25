@@ -22,5 +22,5 @@ mix.styles([
 .js('resources/assets/common/js/counter.js', common + '/js/vendors.js')
 .js('resources/assets/common/js/main.js', common + '/js/main.js')
 .sass('resources/assets/common/scss/main.scss', common + '/css')
-.copy('node_modules/font-awesome/fonts/*', 'public/fonts');
+.copy('node_modules/font-awesome/fonts/*', 'public/common/css/fonts');
 

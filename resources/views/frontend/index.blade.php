@@ -1,5 +1,14 @@
-@include( 'frontend/partials/header' )
+<!DOCTYPE html>
+<html>
+	<head>
+		@include( 'frontend/partials/head')
+	</head>
+	<body class="@yield('body_class')">
+		@include( 'frontend/partials/top-nav' )
 
-@yield( 'content' )
+		@yield( 'content' )
 
-@include( 'frontend/partials/footer' )
+		@include( 'frontend/partials/footer' )
+		@include( 'frontend/partials/scripts' )
+	</body>
+</html>

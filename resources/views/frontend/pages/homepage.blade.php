@@ -1,4 +1,6 @@
 @extends( 'frontend/index' )
+@section('pageTitle', 'Home')
+@section('body_class', 'body__home')
 
 @section( 'content' )
 
@@ -84,7 +86,9 @@
         <h2>Featured Services</h2>
     </div>
 
-    <div class="three-items featured-services-carousel">
+    <div class="container">
+      <div class="row">
+            <div class="four-items featured-services-carousel">
       <div class="owl-carousel">
         <div class="item">
             <img src="{{ asset('frontend/imgs/featured-services-1.jpg') }}">
@@ -110,6 +114,20 @@
             <div class="gradient-overlay"></div>
             <div class="overlay"></div>
         </div>
+        <div class="item">
+            <img src="{{ asset('frontend/imgs/featured-services-3.jpg') }}">
+            <h4>For Kids</h4>
+            <div class="gradient-overlay"></div>
+            <div class="overlay"></div>
+        </div>
+        <div class="item">
+            <img src="{{ asset('frontend/imgs/featured-services-4.jpg') }}">
+            <h4>PWD's</h4>
+            <div class="gradient-overlay"></div>
+            <div class="overlay"></div>
+        </div>
+      </div>
+    </div>
       </div>
     </div>
 

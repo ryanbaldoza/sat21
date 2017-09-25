@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('frontend/pages/homepage');
-});
+
+//Static Pages Routes
+require base_path('routes/frontend/pages/page.php');

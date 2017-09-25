@@ -9,9 +9,9 @@
 					<div class="col-md-3">
 						<p class="col-title">About Us</p>
 						<p>Donec pede justo, fringilla vel, aliq
-uet nec, vulputate eget, arcu. In 
-enim justo, rhoncus ut, imperdiet a,venenatis vitae, justo. Vivamus elementum semper nisi. Aenean
-Nullam dictum felis. </p>
+					uet nec, vulputate eget, arcu. In 
+					enim justo, rhoncus ut, imperdiet a,venenatis vitae, justo. Vivamus elementum semper nisi. Aenean
+					Nullam dictum felis. </p>
 					</div>
 					<div class="col-md-2">
 						<p class="col-title">Sitemap</p>
@@ -37,9 +37,11 @@ Nullam dictum felis. </p>
 					</div>
 				</div>
 			</div>
+			  <div class="scroll-top-wrapper ">
+				    <span class="scroll-top-inner">
+				      <i class="fa fa-2x fa-arrow-circle-up"></i>
+				    </span>
+			  </div>  
 		</footer>
-		<script type="text/javascript" src="{{ asset('common/js/vendors.js') }}"></script>
-		<script type="text/javascript" src="{{ asset('common/js/main.js') }}"></script>
-		@yield("scripts")
-	</body>
-</html>
+		
+	

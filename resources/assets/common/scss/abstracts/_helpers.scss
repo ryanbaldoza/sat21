@@ -10,3 +10,46 @@
     display: -webkit-flex;
     justify-content: center; 
 }
+
+.dark-overlay {
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.white-overlay {
+	background: rgba(255,255,255,.9);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.diagonal-left {
+	height: 550px;
+    -webkit-transform: skew(-10deg);
+    transform: skew(-10deg);
+    right: -50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.diagonal-left img {
+	min-width: 100%;
+	height: 100%;
+	width: auto;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	position: absolute;
+	right: 50px;
+   -webkit-transform: skew(10deg);
+   transform: skew(10deg);
+}
