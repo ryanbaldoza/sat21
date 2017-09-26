@@ -18,7 +18,7 @@
       </div>
     </div>
      <div class="slide-content">
-            <div class="banner-logo"><img src="{{ asset('frontend/imgs/heegus-tagline.png') }}" alt="Heegus"></div>
+            <div class="banner-logo"><img class="img-responsive" src="{{ asset('frontend/imgs/heegus-tagline.png') }}" alt="Heegus"></div>
               <form class="form-inline">
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Search Services"  name="services" id="services">

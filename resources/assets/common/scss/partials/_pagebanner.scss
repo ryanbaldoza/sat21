@@ -1,0 +1,42 @@
+
+.page-banner {
+	display: table;
+	width: 100%;
+	position: relative;
+	padding: 100px 0 120px; 
+	text-align: center;
+	background-attachment: fixed;
+}
+
+.page-banner h1 {
+	color: #fff;
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.body__aboutus .page-banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body__howitworks .page-banner {
+	background: url('/frontend/imgs/howitworks/howitworks-banner.jpg') 50% 50% no-repeat fixed;
+	background-size: cover;
+}
+
+.body__advertiser .page-banner{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body__contactus .page-banner {
+    background-attachment: fixed;
+    background-position: 50% -28%;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+

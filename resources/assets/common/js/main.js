@@ -285,7 +285,8 @@ $('.four-items .owl-carousel').owlCarousel({
     })
 
 
-    function initialize() {
+if ($('body').hasClass('body__contactus')) {
+      function initialize() {
 
         var gmarkers = [];
         var map = null;
@@ -385,10 +386,10 @@ $('.four-items .owl-carousel').owlCarousel({
           setMarkers(locations);
 
       }
-
       // add window listener for GMaps
       google.maps.event.addDomListener(window, 'load', initialize);
 
+}
 
 });
 

@@ -351,92 +351,95 @@ $(document).ready(function () {
         }
     });
 
-    function initialize() {
+    if ($('body').hasClass('body__contactus')) {
+        var initialize = function initialize() {
 
-        var gmarkers = [];
-        var map = null;
-        var infowindow = null;
+            var gmarkers = [];
+            var map = null;
+            var infowindow = null;
 
-        var styles = [{
-            featureType: "administrative",
-            elementType: "all",
-            stylers: [{ saturation: -99 }]
-        }, {
-            featureType: "landscape",
-            elementType: "all",
-            stylers: [{ saturation: -99 }]
-        }, {
-            featureType: "poi",
-            elementType: "all",
-            stylers: [{ saturation: -99 }]
-        }, {
-            featureType: "road",
-            elementType: "all",
-            stylers: [{ saturation: -99 }]
-        }, {
-            featureType: "transit",
-            elementType: "all",
-            stylers: [{ saturation: -99 }]
-        }, {
-            featureType: "water",
-            elementType: "all",
-            stylers: [{ saturation: -99 }]
-        }];
-        var customMarker = $('#heegus-map').data("marker");
-        var mapOptions = {
-            center: new google.maps.LatLng(55.869998, -4.263405),
-            zoom: 13,
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            mapTypeControl: false,
-            zoomControl: true,
-            styles: styles
+            var styles = [{
+                featureType: "administrative",
+                elementType: "all",
+                stylers: [{ saturation: -99 }]
+            }, {
+                featureType: "landscape",
+                elementType: "all",
+                stylers: [{ saturation: -99 }]
+            }, {
+                featureType: "poi",
+                elementType: "all",
+                stylers: [{ saturation: -99 }]
+            }, {
+                featureType: "road",
+                elementType: "all",
+                stylers: [{ saturation: -99 }]
+            }, {
+                featureType: "transit",
+                elementType: "all",
+                stylers: [{ saturation: -99 }]
+            }, {
+                featureType: "water",
+                elementType: "all",
+                stylers: [{ saturation: -99 }]
+            }];
+            var customMarker = $('#heegus-map').data("marker");
+            var mapOptions = {
+                center: new google.maps.LatLng(55.869998, -4.263405),
+                zoom: 13,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                mapTypeControl: false,
+                zoomControl: true,
+                styles: styles
 
-        };
+            };
 
-        map = new google.maps.Map(document.getElementById("heegus-map"), mapOptions);
+            map = new google.maps.Map(document.getElementById("heegus-map"), mapOptions);
 
-        google.maps.event.addListener(map, 'click', function () {
-            infowindow.close();
-        });
+            google.maps.event.addListener(map, 'click', function () {
+                infowindow.close();
+            });
 
-        var locations = [['Heegus', 14.8511431, 120.8150448]];
+            var locations = [['Heegus', 14.8511431, 120.8150448]];
 
-        /*infowindow = new google.maps.InfoWindow({
-          size: new google.maps.Size(150,50)
-        });*/
+            /*infowindow = new google.maps.InfoWindow({
+              size: new google.maps.Size(150,50)
+            });*/
 
-        function setMarkers(locations) {
-            for (var i = 0; i < locations.length; i++) {
-                var location = locations[i];
-                var myLatLng = new google.maps.LatLng(location[1], location[2]);
-                var marker = new google.maps.Marker({
-                    position: myLatLng,
-                    icon: customMarker,
-                    animation: google.maps.Animation.DROP,
-                    map: map,
-                    title: location[0]
-                });
+            function setMarkers(locations) {
+                for (var i = 0; i < locations.length; i++) {
+                    var location = locations[i];
+                    var myLatLng = new google.maps.LatLng(location[1], location[2]);
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        icon: customMarker,
+                        animation: google.maps.Animation.DROP,
+                        map: map,
+                        title: location[0]
+                    });
 
-                var latLng = marker.getPosition(); // returns LatLng object
-                map.setCenter(latLng); // setCenter takes a LatLng object
-                map.setZoom(17);
+                    var latLng = marker.getPosition(); // returns LatLng object
+                    map.setCenter(latLng); // setCenter takes a LatLng object
+                    map.setZoom(17);
 
-                // Standard markers - if not using infobox
-                google.maps.event.addListener(marker, "click", function () {
-                    map.setCenter(marker.getPosition());
-                    infowindow.setContent(this.html);
-                    infowindow.open(map, this);
-                });
-                gmarkers.push(marker);
+                    // Standard markers - if not using infobox
+                    google.maps.event.addListener(marker, "click", function () {
+                        map.setCenter(marker.getPosition());
+                        infowindow.setContent(this.html);
+                        infowindow.open(map, this);
+                    });
+                    gmarkers.push(marker);
+                }
             }
-        }
 
-        // Add the markers
-        setMarkers(locations);
+            // Add the markers
+            setMarkers(locations);
+        };
+        // add window listener for GMaps
+
+
+        google.maps.event.addDomListener(window, 'load', initialize);
     }
-
-    // add window listener for GMaps
-    google.maps.event.addDomListener(window, 'load', initialize);
 });
 
 /***/ })

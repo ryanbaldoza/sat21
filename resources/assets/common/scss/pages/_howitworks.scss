@@ -1,0 +1,28 @@
+#howitworks {
+	background: url('/frontend/imgs/howitworks/howitworks-bg.jpg') 50% 50% no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.howitworks-section {
+	padding: 0 30px;
+	text-align: center;
+}
+
+.howitworks-section img {
+	margin-bottom: 20px;
+}
+
+.howitworks-section h2 {
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.howitworks-section .gray-dots-vertical {
+	margin: 40px 0 0;
+}
+
+.howitworks-section .gray-dots-vertical-last {
+	margin: 40px 0;
+}

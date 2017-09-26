@@ -1,0 +1,116 @@
+.header {
+	padding: 15px 0;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	
+	.__logo,
+	a.website__btn {
+		display: inline-block;
+	}
+
+	.__logo {
+	    margin-right: 35px;
+	}
+
+	a.website__btn {
+		width: 170px;
+	}
+
+	.user__action {
+	    margin-top: 15px;
+
+	    a {
+			font-family: $main-font;
+		}
+
+		.sign__up,
+		.sign__in {
+			display: inline-block;
+		    width: 120px;
+		    text-align: center;
+		    padding: 7px;
+		    color: #202020;
+		    font-weight: 600;
+		    font-size: 13px;
+
+		    img {
+		    	display: inline-block;
+			    margin-right: 10px;
+		    }
+
+		    .website__btn {
+		    	margin-left: 15px;
+		    }
+		}
+	}
+}
+
+#sticky-header {
+	margin-top: -200px;
+	position: fixed;
+	top: 0;
+	left:0;
+	z-index: 999;
+	width: 100%;
+	background-color: rgb(255,255,255);
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	-webkit-transition: all 1s;
+	padding: 15px 0;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	
+	.__logo,
+	a.website__btn {
+		display: inline-block;
+	}
+
+	.__logo {
+	    margin-right: 35px;
+	}
+
+	a.website__btn {
+		width: 170px;
+	}
+
+	.user__action {
+	    margin-top: 15px;
+
+	    a {
+			font-family: $main-font;
+		}
+
+		.sign__up,
+		.sign__in {
+			display: inline-block;
+		    width: 120px;
+		    text-align: center;
+		    padding: 7px;
+		    color: #202020;
+		    font-weight: 600;
+		    font-size: 13px;
+
+		    img {
+		    	display: inline-block;
+			    margin-right: 10px;
+		    }
+
+		    .website__btn {
+		    	margin-left: 15px;
+		    }
+		}
+	}
+
+
+}
+
+
+@media only screen and (max-width : 992px) {
+	.header .container, 
+	#sticky-header .container {
+		width: 97.5%;
+	}
+}
