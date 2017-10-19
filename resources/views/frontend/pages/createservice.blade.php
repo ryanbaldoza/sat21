@@ -27,7 +27,7 @@
 										<p>STEP 1 OF 4</p>
 									</div>
 									<div class="col-xs-12 col-md-4 col-lg-3">	
-										<a href="/" onclick="return false;" class="website__btn secondary__btn link__btn __transition " >CONTINUE</a>
+										<a href="{{ url('create-service/choose-category') }}" class="link__btn secondary__btn  __transition " >CONTINUE</a>
 									</div>
 									<div class="cleafix"></div>
 								</div>
@@ -42,7 +42,7 @@
 										<p>STEP 1 OF 2</p>
 									</div>
 									<div class="col-xs-12 col-md-4 col-lg-3">	
-										<a href="/" onclick="return false;" class="website__btn secondary__btn link__btn __transition disable" >CONTINUE</a>
+										<a href="/" onclick="return false;" class="link__btn secondary__btn __transition disable" >CONTINUE</a>
 									</div>
 									<div class="cleafix"></div>
 								</div>
@@ -56,7 +56,7 @@
 										<p>STEP 1 OF 3</p>
 									</div>
 									<div class="col-xs-12 col-md-4 col-lg-3">	
-											<a href="/" onclick="return false;" class="website__btn secondary__btn link__btn __transition disable" >CONTINUE</a>
+											<a href="/" onclick="return false;" class="link__btn secondary__btn __transition disable" >CONTINUE</a>
 									</div>
 									<div class="cleafix"></div>
 								</div>
@@ -65,12 +65,12 @@
 						</div>
 						<div class="cleafix"></div>
 					</div>
-					<a href="/" onclick="return false;" class="website__btn primary__btn __transition disable" >Publish</a>
-					<a href="/" onclick="return false;" class="website__btn secondary__btn __transition disable" >Preview</a>
+					<a href="/" onclick="return false;" class="nav__btn primary__btn __transition disable" >Publish</a>
+					<a href="/" onclick="return false;" class="nav__btn secondary__btn __transition disable" >Preview</a>
 				</div>
 			</div>
 			<!-- Right Content -->
-			<div class="col-xs-12 col-md-5 col-md-offset-1 cservice-gray page-container">
+			<div class="col-xs-12 col-md-5 col-md-offset-1 container-gray page-container">
 				<div class="container-table">
 					<div class="container-cell">
 						<img class="img-responsive center-block" src="{{ asset('frontend/imgs/createservice/service_right_img.png') }}" alt="">

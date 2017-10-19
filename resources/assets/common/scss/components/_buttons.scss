@@ -27,7 +27,11 @@
 	&:hover {
 		color: #fff;
 	}
-
+ 	&.disable, &.disable:hover, &.disable:focus{
+		background-color:$disabled-color;
+		color:white;
+		cursor: default;
+	}
 }
 
 .search__btn {
@@ -43,3 +47,42 @@
 		color: #fff;
 	}
 }
+
+.gray__btn{
+	background-color:$back-btn-color;
+
+	&:hover{
+		background-color:$primary_color;
+	}
+}
+
+.nav__btn{
+	@extend .website__btn;
+	display: inline-block;
+    padding: 0;
+    max-width: 234px;
+    font-size: 16px;
+    width: 100%;
+    line-height: 52px;
+    border-radius: 5px;
+}
+
+.link__btn{
+	@extend .website__btn;
+    display: inline-block;
+    color: white;
+    padding: 12px 15px;
+    padding-right: 50px;
+    border-radius: 30px;
+    font-size: 12px;
+    line-height: 12px;
+
+    &:after{
+    	content:"\27F6";
+	    margin-left: 8px;
+	    font-size: 25px;
+	    position: absolute;
+	    top: 10px;
+    }
+}
+

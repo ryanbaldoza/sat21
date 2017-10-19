@@ -40,4 +40,9 @@ class PageController extends BaseController
     {
        return view( 'frontend/pages/createservice' );
     }
+
+    public function choosecategory()
+    {
+       return view( 'frontend/pages/choosecategory' );
+    }
 }

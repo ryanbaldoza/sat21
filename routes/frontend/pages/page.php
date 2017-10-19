@@ -11,3 +11,4 @@ Route::get('/advertiser', 'PageController@advertiser')->name('advertiser');
 Route::get('/policy', 'PageController@policy')->name('policy');
 Route::get('/contact-us', 'PageController@contactus')->name('contact-us');
 Route::get('/create-service', 'PageController@createservice')->name('create-service');
+Route::get('/create-service/choose-category', 'PageController@choosecategory')->name('choose-category');
