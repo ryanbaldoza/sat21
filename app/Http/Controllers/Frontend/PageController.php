@@ -35,4 +35,9 @@ class PageController extends BaseController
     {
        return view( 'frontend/pages/policy' );
     }
+    
+    public function createservice()
+    {
+       return view( 'frontend/pages/createservice' );
+    }
 }
