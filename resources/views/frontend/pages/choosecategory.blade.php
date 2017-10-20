@@ -140,11 +140,11 @@
 							<div class="content-divider">
 								<div class="progress">
 								  <div class="progress-bar" role="progressbar" aria-valuenow="70"
-								  aria-valuemin="0" aria-valuemax="100" style="width:20%">
+								  aria-valuemin="0" aria-valuemax="100" style="width:25%">
 								  </div>
 								</div>
 							</div>
-							<p>Step 1/5</p>
+							<p>Step 1/4</p>
 							<div class="content-divider">
 								<img class="img-responsive center-block" src="{{ asset('frontend/imgs/choosecategory/ccategory_right_img.png') }}" alt="">
 							</div>

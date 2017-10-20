@@ -63,11 +63,11 @@
 							<div class="content-divider">
 								<div class="progress">
 								  <div class="progress-bar" role="progressbar" aria-valuenow="70"
-								  aria-valuemin="0" aria-valuemax="100" style="width:40%">
+								  aria-valuemin="0" aria-valuemax="100" style="width:50%">
 								  </div>
 								</div>
 							</div>
-							<p>Step 2/5</p>
+							<p>Step 2/4</p>
 							<div class="content-divider">
 								<img class="img-responsive center-block" src="{{ asset('frontend/imgs/applytags/atags_right_img.png') }}" alt="">
 							</div>
