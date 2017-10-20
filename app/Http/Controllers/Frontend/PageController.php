@@ -45,4 +45,9 @@ class PageController extends BaseController
     {
        return view( 'frontend/pages/choosecategory' );
     }
+
+    public function applytags()
+    {
+       return view( 'frontend/pages/applytags' );
+    }
 }

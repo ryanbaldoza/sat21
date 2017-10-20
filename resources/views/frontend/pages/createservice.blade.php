@@ -27,7 +27,7 @@
 										<p>STEP 1 OF 5</p>
 									</div>
 									<div class="col-xs-12 col-md-4 col-lg-3">	
-										<a href="{{ url('create-service/choose-category') }}" class="link__btn secondary__btn  __transition " >CONTINUE</a>
+										<a href="{{ url('choose-category') }}" class="link__btn secondary__btn  __transition " >CONTINUE</a>
 									</div>
 									<div class="cleafix"></div>
 								</div>

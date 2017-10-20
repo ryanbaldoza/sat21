@@ -1,6 +1,6 @@
 @extends( 'frontend/index' )
 @section('pageTitle', 'Basic Information')
-@section('body_class', 'body__basicone')
+@section('body_class', 'body__choosecategory')
 
 @section( 'content' )
 
@@ -126,7 +126,7 @@
 						</div>
 						<!-- action btns -->
 						<a href="{{ url('create-service') }}" class="nav__btn gray__btn __transition" >Back</a>
-						<a href="{{ url('create-service/apply-tags') }}" class="nav__btn secondary__btn __transition" >Next</a>
+						<a href="{{ url('apply-tags') }}" class="nav__btn secondary__btn __transition" >Next</a>
 					</div>
 					<div class="cleafix"></div>
 				</div>
