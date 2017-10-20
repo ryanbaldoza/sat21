@@ -19,6 +19,7 @@
 							<div class="content-divider">
 								<div class="cservice-stage __flex">
 									<div class="col-xs-12 col-md-8 col-lg-9">
+										<!-- add class __check in cservice-stat if finished -->
 										<div class="cservice-stat "></div>
 										<div class="cservice-img">
 											<img src="{{ asset('frontend/imgs/createservice/service_p1.png') }}" alt="" class="center-block">

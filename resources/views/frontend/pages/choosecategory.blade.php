@@ -144,7 +144,7 @@
 								  </div>
 								</div>
 							</div>
-							<p>Step 1/4</p>
+							<p>Step 1/5</p>
 							<div class="content-divider">
 								<img class="img-responsive center-block" src="{{ asset('frontend/imgs/choosecategory/ccategory_right_img.png') }}" alt="">
 							</div>

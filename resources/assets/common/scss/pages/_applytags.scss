@@ -1,0 +1,41 @@
+#applytags{
+	& .atags-container{
+		min-height: 300px;
+		& .atags-list{
+			list-style:none;
+
+			& label{
+				display: inline-block;
+				font-weight: normal;
+				margin-left:20px;
+			}
+
+			& li{
+				position: relative;
+			}
+
+			& input[type="checkbox"]{
+				&:before{
+				    content: '';
+				    width: 23px;
+				    height: 23px;
+				    background: white;
+				    position: absolute;
+				    top: 10px;
+				    border: -2px solid #d5d5d5!important;
+				    box-shadow: inset 0px 0px 0px 2px $disabled-color;
+				}
+				&:checked:after{
+			        content: '\2713';
+				    border-radius: 50%;
+				    position: absolute;
+				    top: -5px;
+				    left: 4px;
+				    color: $secondary_color;
+				    font-size: 30px;
+				    font-weight: 700;
+				}
+			}
+		}
+	}
+}

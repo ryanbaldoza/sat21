@@ -4660,3 +4660,44 @@ header {
   left: 4px;
 }
 
+#applytags .atags-container {
+  min-height: 300px;
+}
+
+#applytags .atags-container .atags-list {
+  list-style: none;
+}
+
+#applytags .atags-container .atags-list label {
+  display: inline-block;
+  font-weight: normal;
+  margin-left: 20px;
+}
+
+#applytags .atags-container .atags-list li {
+  position: relative;
+}
+
+#applytags .atags-container .atags-list input[type="checkbox"]:before {
+  content: '';
+  width: 23px;
+  height: 23px;
+  background: white;
+  position: absolute;
+  top: 10px;
+  border: -2px solid #d5d5d5 !important;
+  -webkit-box-shadow: inset 0px 0px 0px 2px #d5d5d5;
+          box-shadow: inset 0px 0px 0px 2px #d5d5d5;
+}
+
+#applytags .atags-container .atags-list input[type="checkbox"]:checked:after {
+  content: '\2713';
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: 4px;
+  color: #3b5a9a;
+  font-size: 30px;
+  font-weight: 700;
+}
+
