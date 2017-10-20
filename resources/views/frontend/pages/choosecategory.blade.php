@@ -16,6 +16,7 @@
 						<div class="content-divider">
 							<!-- basicone categories -->
 							<ul class="list-inline text-center">
+								<!-- use active class to highlight a category -->
 								<li class="ccategory-cat active">
 									<a href="#">
 										<div class="ccc_img">
@@ -93,36 +94,39 @@
 						<!-- category services -->
 						<div class="content-divider">
 							<div class="ccategory-services">
-								<!-- <div class="col-xs-12">
-									<div class="col-xs-12 col-sm-4">{{ form::radio('service', 'Laundry Services', true) }}</div>
-									<div class="col-xs-12 col-sm-4">{{ form::radio('service', 'Electrical') }}</div>
-									<div class="col-xs-12 col-sm-4">{{ form::radio('service', 'Glass/ Aluminum Installation') }}</div>
-								</div>
 								<div class="col-xs-12">
-									<div class="col-xs-12 col-sm-4">{{ form::radio('service', 'CCTV & Sercurity Installation') }}</div>
-									<div class="col-xs-12 col-sm-4">{{ form::radio('service', 'Roof repair & Installatio') }}n</div>
-									<div class="col-xs-12 col-sm-4">{{ form::radio('service', 'Floor Repair & Installation') }}</div>
+									<div class="col-xs-12">
+										<div class="col-xs-12 col-sm-3 pad-tb-10">{{ Form::radio('service', 'Laundry Services', true) }} <p>Laundry Services</p></div>
+										<div class="col-xs-12 col-sm-offset-1 col-sm-3 pad-tb-10">{{ Form::radio('service', 'Electrical') }} <p>Electrical</p></div>
+										<div class="col-xs-12 col-sm-offset-1 col-sm-3 pad-tb-10">{{ Form::radio('service', 'Glass/Aluminum Installation') }} <p>Glass/Aluminum Installation</p></div>
+									</div>
+									<div class="col-xs-12">
+										<div class="col-xs-12 col-sm-3 pad-tb-10">{{ Form::radio('service', 'CCTV & Sercurity Installation') }}<p>CCTV & Sercurity Installation</p></div>
+										<div class="col-xs-12 col-sm-offset-1 col-sm-3 pad-tb-10">{{ Form::radio('service', 'Roof repair & Installation') }}<p>Roof repair & Installation</p></div>
+										<div class="col-xs-12 col-sm-offset-1 col-sm-3 pad-tb-10">{{ Form::radio('service', 'Floor Repair & Installation') }}<p>Floor Repair & Installation</p></div>
+									</div>
+									<div class="col-xs-12">
+										<div class="col-xs-12 col-sm-3 pad-tb-10">{{ Form::radio('service', 'Upholstery') }}<p>Upholstery</p></div>
+										<div class="col-xs-12 col-sm-offset-1 col-sm-3 pad-tb-10">{{ Form::radio('service', 'Furniture') }}<p>Furniture</p></div>
+										<div class="col-xs-12 col-sm-offset-1 col-sm-3 pad-tb-10">{{ Form::radio('service', 'Landscaping') }}<p>Landscaping</p></div>
+									</div>
+									<div class="col-xs-12">
+										<div class="col-xs-12 col-sm-3 pad-tb-10">{{ Form::radio('service', 'Ironworks') }}<p>Ironworks</p></div>
+										<div class="col-xs-12 col-sm-offset-1 col-sm-3 pad-tb-10">{{ Form::radio('service', 'Carpentry') }}<p>Carpentry</p></div>
+										<div class="col-xs-12 col-sm-offset-1 col-sm-3 pad-tb-10">{{ Form::radio('service', 'Pest Control') }}<p>Pest Control</p></div>
+									</div>
+									<div class="col-xs-12">
+										<div class="col-xs-12 col-sm-3 pad-tb-10">{{ Form::radio('service', 'House Painting') }}<p>House Painting</p></div>
+									</div>
+									<div class="clearfix"></div>
 								</div>
-								<div class="col-xs-12">
-									<div class="col-xs-12 col-sm-4">{{ form::radio('service', 'Upholstery') }}</div>
-									<div class="col-xs-12 col-sm-4">{{ form::radio('service', 'Furniture') }}</div>
-									<div class="col-xs-12 col-sm-4">{{ form::radio('service', 'Landscaping') }}</div>
-								</div>
-								<div class="col-xs-12">
-									<div class="col-xs-12 col-sm-4">{{ form::radio('service', 'Ironworks') }}</div>
-									<div class="col-xs-12 col-sm-4">{{ form::radio('service', 'Carpentry') }}</div>
-									<div class="col-xs-12 col-sm-4">{{ form::radio('service', 'Pest Control') }}</div>
-								</div>
-								<div class="col-xs-12">
-									<div class="col-xs-12 col-sm-4">{{ form::radio('service', 'House Painting') }}</div>
-								</div>
-								<div class="clearfix"></div> -->
+								<div class="clearfix"></div>
 							</div>
 
 						</div>
 						<!-- action btns -->
 						<a href="{{ url('create-service') }}" class="nav__btn gray__btn __transition" >Back</a>
-						<a href="/" onclick="return false;" class="nav__btn secondary__btn __transition" >Next</a>
+						<a href="{{ url('create-service/apply-tags') }}" class="nav__btn secondary__btn __transition" >Next</a>
 					</div>
 					<div class="cleafix"></div>
 				</div>
@@ -136,7 +140,7 @@
 							<div class="content-divider">
 								<div class="progress">
 								  <div class="progress-bar" role="progressbar" aria-valuenow="70"
-								  aria-valuemin="0" aria-valuemax="100" style="width:25%">
+								  aria-valuemin="0" aria-valuemax="100" style="width:20%">
 								  </div>
 								</div>
 							</div>

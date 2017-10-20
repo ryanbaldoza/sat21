@@ -24,14 +24,14 @@
 											<img src="{{ asset('frontend/imgs/createservice/service_p1.png') }}" alt="" class="center-block">
 										</div>
 										<h4><strong>Basic Information</strong></h4>
-										<p>STEP 1 OF 4</p>
+										<p>STEP 1 OF 5</p>
 									</div>
 									<div class="col-xs-12 col-md-4 col-lg-3">	
 										<a href="{{ url('create-service/choose-category') }}" class="link__btn secondary__btn  __transition " >CONTINUE</a>
 									</div>
 									<div class="cleafix"></div>
 								</div>
-								<div class="cservice-stage __flex">
+								<!-- <div class="cservice-stage __flex">
 									<div class="col-xs-12 col-md-8 col-lg-9">
 
 										<div class="cservice-stat"></div>
@@ -45,7 +45,7 @@
 										<a href="/" onclick="return false;" class="link__btn secondary__btn __transition disable" >CONTINUE</a>
 									</div>
 									<div class="cleafix"></div>
-								</div>
+								</div> -->
 								<div class="cservice-stage __flex">
 									<div class="col-xs-12 col-md-8 col-lg-9">
 										<div class="cservice-stat"></div>
@@ -53,7 +53,7 @@
 											<img src="{{ asset('frontend/imgs/createservice/service_p3.png') }}" alt="" class="center-block">
 										</div>
 										<h4><strong>Availability & Pricing</strong></h4>
-										<p>STEP 1 OF 3</p>
+										<p>STEP 1 OF 4</p>
 									</div>
 									<div class="col-xs-12 col-md-4 col-lg-3">	
 											<a href="/" onclick="return false;" class="link__btn secondary__btn __transition disable" >CONTINUE</a>
@@ -66,7 +66,7 @@
 						<div class="cleafix"></div>
 					</div>
 					<a href="/" onclick="return false;" class="nav__btn primary__btn __transition disable" >Publish</a>
-					<a href="/" onclick="return false;" class="nav__btn secondary__btn __transition disable" >Preview</a>
+					<!-- <a href="/" onclick="return false;" class="nav__btn secondary__btn __transition disable" >Preview</a> -->
 				</div>
 			</div>
 			<!-- Right Content -->
