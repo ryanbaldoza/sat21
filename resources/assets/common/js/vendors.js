@@ -3,3 +3,4 @@ require("bootstrap");
 require("owl.carousel");
 require("waypoints/lib/jquery.waypoints.js");
 require("venobox");
+require("jquery-steps/build/jquery.steps.js");

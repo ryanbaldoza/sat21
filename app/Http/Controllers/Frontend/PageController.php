@@ -50,4 +50,12 @@ class PageController extends BaseController
     {
        return view( 'frontend/pages/applytags' );
     }
+    public function signup_for_serviceprovider()
+    {
+       return view( 'frontend/registration/serviceprovider' );
+    }
+    public function signup_for_serviceprovider_form()
+    {
+       return view( 'frontend/registration/reg-form' );
+    }
 }

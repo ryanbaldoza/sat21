@@ -13,3 +13,5 @@ Route::get('/contact-us', 'PageController@contactus')->name('contact-us');
 Route::get('/create-service', 'PageController@createservice')->name('create-service');
 Route::get('/choose-category', 'PageController@choosecategory')->name('choose-category');
 Route::get('/apply-tags', 'PageController@applytags')->name('apply-tags');
+Route::get('/sign-up-for-service-provider', 'PageController@signup_for_serviceprovider')->name('signup-serviceprovider');
+Route::get('/sign-up-for-service-provider/basic', 'PageController@signup_for_serviceprovider_form')->name('signup-serviceprovider-form');

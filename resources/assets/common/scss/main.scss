@@ -1,28 +1,32 @@
 $fa-font-path: "/fonts";
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700);
 @import "node_modules/font-awesome/scss/font-awesome.scss";
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
-@import 'abstracts/helpers';
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/helpers";
 
-@import 'base/base';
-@import 'base/typography';
+@import "base/base";
+@import "base/typography";
 
-@import 'partials/header';
-@import 'partials/footer';
-@import 'partials/pagebanner';
-@import 'partials/section';
+@import "partials/header";
+@import "partials/footer";
+@import "partials/pagebanner";
+@import "partials/section";
 
-@import 'components/buttons';
-@import 'components/carousel';
-@import 'components/ratings';
-@import 'components/forms';
+@import "components/buttons";
+@import "components/carousel";
+@import "components/ratings";
+@import "components/forms";
 
-@import 'pages/home';
-@import 'pages/aboutus';
-@import 'pages/howitworks';
-@import 'pages/advertiser';
-@import 'pages/contactus';
-@import 'pages/policy';
-@import 'pages/createservice';
-@import 'pages/choosecategory';
-@import 'pages/applytags';
+@import "pages/home";
+@import "pages/aboutus";
+@import "pages/howitworks";
+@import "pages/advertiser";
+@import "pages/contactus";
+@import "pages/policy";
+@import "pages/createservice";
+@import "pages/choosecategory";
+@import "pages/applytags";
+
+//Registration
+@import "pages/registration/registration";

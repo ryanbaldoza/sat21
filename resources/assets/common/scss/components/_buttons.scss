@@ -1,88 +1,117 @@
 .primary__btn {
-	background-color: $primary_color;
-
-	&:hover {
-		background-color: $secondary_color
-	}
-}
-
-.secondary__btn {
-	background-color: $secondary_color;
-
-	&:hover {
-		background-color: $primary_color;		
-	}
-}
-
-.website__btn {
-	@include rounded;
-	font-size: 13px;
-	padding: 11px 10px;
-	text-align: center;
-	color: #fff;
-	display: block;
-	font-family: $main-font;
-	font-weight: 600;
-
-	&:hover {
-		color: #fff;
-	}
- 	&.disable, &.disable:hover, &.disable:focus{
-		background-color:$disabled-color;
-		color:white;
-		cursor: default;
-	}
-}
-
-.search__btn {
-	@include rounded;
-	font-size: 13px;
-	padding: 11px 10px;
-	text-align: center;
-	color: #fff;
-	font-family: $main-font;
-	font-weight: 600;
-
-	&:hover {
-		color: #fff;
-	}
-}
-
-.gray__btn{
-	background-color:$back-btn-color;
-
-	&:hover{
-		background-color:$primary_color;
-	}
-}
-
-.nav__btn{
-	@extend .website__btn;
-	display: inline-block;
-    padding: 0;
-    max-width: 234px;
-    font-size: 16px;
-    width: 100%;
-    line-height: 52px;
-    border-radius: 5px;
-}
-
-.link__btn{
-	@extend .website__btn;
-    display: inline-block;
-    color: white;
-    padding: 12px 15px;
-    padding-right: 50px;
-    border-radius: 30px;
-    font-size: 12px;
-    line-height: 12px;
-
-    &:after{
-    	content:"\27F6";
-	    margin-left: 8px;
-	    font-size: 25px;
-	    position: absolute;
-	    top: 10px;
+    color: #fff;
+    background-color: $primary_color;
+    &:hover {
+        background-color: $secondary_color;
     }
 }
 
+.secondary__btn {
+    color: #fff;
+    background-color: $secondary_color;
+    &:hover {
+        background-color: $primary_color;
+    }
+}
+
+.secondary__bordered__btn {
+    color: $secondary_color;
+    border: 1px solid $secondary_color;
+    background-color: #fff;
+    &:hover {
+        color: #fff;
+        border-color: $primary_color;
+        background-color: $primary_color;
+    }
+}
+
+.website__btn {
+    display: block;
+    padding: 11px 10px;
+
+    font-family: $main-font;
+    font-size: 13px;
+    font-weight: 600;
+
+    text-align: center;
+
+    @include rounded;
+
+    &:hover {
+        color: #fff;
+    }
+    &.disable,
+    &.disable:hover,
+    &.disable:focus {
+        cursor: default;
+
+        color: white;
+        background-color: $disabled-color;
+    }
+}
+
+.search__btn {
+    padding: 11px 10px;
+
+    font-family: $main-font;
+    font-size: 13px;
+    font-weight: 600;
+
+    text-align: center;
+
+    color: #fff;
+
+    @include rounded;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.gray__btn {
+    color: #fff;
+    background-color: $back-btn-color;
+
+    &:hover {
+        background-color: $primary_color;
+    }
+}
+
+.nav__btn {
+    display: inline-block;
+    width: 100%;
+    max-width: 234px;
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 52px;
+
+    border-radius: 5px;
+
+    @extend .website__btn;
+}
+
+.link__btn {
+    display: inline-block;
+    padding: 12px 15px;
+    padding-right: 50px;
+
+    font-size: 12px;
+    line-height: 12px;
+
+    color: white;
+    border-radius: 30px;
+
+    @extend .website__btn;
+
+    &:after {
+        position: absolute;
+        top: 10px;
+
+        margin-left: 8px;
+
+        font-size: 25px;
+
+        content: "\27F6";
+    }
+}
