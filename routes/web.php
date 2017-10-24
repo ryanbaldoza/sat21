@@ -14,3 +14,8 @@
 
 //Static Pages Routes
 require base_path('routes/frontend/pages/page.php');
+require base_path('routes/frontend/registration/serviceprovider.php');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

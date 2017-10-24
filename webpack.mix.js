@@ -16,7 +16,8 @@ mix.styles([
 	'node_modules/bootstrap/dist/css/bootstrap.min.css',
 	'node_modules/owl.carousel/dist/assets/owl.carousel.min.css',
 	'node_modules/owl.carousel/dist/assets/owl.theme.default.min.css',
-	'node_modules/venobox/venobox/venobox.css'
+	'node_modules/venobox/venobox/venobox.css',
+	'node_modules/dropzone/dist/dropzone.css'
 ], common + '/css/vendors.css')
 .js('resources/assets/common/js/vendors.js', common + '/js/vendors.js')
 .js('resources/assets/common/js/counter.js', common + '/js/vendors.js')
